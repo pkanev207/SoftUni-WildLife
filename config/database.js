@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
+require('../models/User');
 
 // TODO change database name
-// const dbName = 'wildlife';
-// const connString = `mongodb://localhost:27017/${dbName}`;
-const dbName = 'testdb';
+const dbName = 'wildlife';
 const connString = `mongodb://127.0.0.1:27017/${dbName}`;
+// const connString = `mongodb://localhost:27017/${dbName}`;
 
 module.exports = async (app) => {
     try {
