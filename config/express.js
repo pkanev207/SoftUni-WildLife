@@ -1,6 +1,7 @@
 const express = require('express');
 const { create } = require('express-handlebars');
 const session = require('express-session');
+const userSession = require('../middleware/userSession');
 
 module.exports = (app) => {
     app.engine('.hbs', create({ extname: '.hbs' }).engine);
@@ -17,4 +18,5 @@ module.exports = (app) => {
     }));
 
     app.use(express.urlencoded({ extended: true }));
+    app.use(userSession());
 };

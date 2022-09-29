@@ -22,7 +22,7 @@ module.exports = async (app) => {
         });
     } catch (err) {
         console.error('Error connecting to database');
-        console.log(err);
+        // console.log(err);
         process.exit(1);
     }
 };
