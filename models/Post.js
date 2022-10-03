@@ -5,7 +5,7 @@ const URL_PATTERN = /^http?:\/\/(.+)$/;
 const postSchema = new Schema({
     title: { type: String, minlength: [6, 'Title must be at least 6 characters long!'] },
     keyword: { type: String, minlength: [6, 'Keyword must be at least 6 characters long!'] },
-    location: { type: String, maxlength: [15, 'Title must be at most 15 characters long!'] },
+    location: { type: String, maxlength: [15, 'Location must be at most 15 characters long!'] },
     date: {
         type: String,
         minlength: [10, 'Data must be 10 characters long!'],
